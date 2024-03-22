@@ -37,5 +37,9 @@ line-height: 130%;
 color: #fff;
 }
 .button{
-    
+    border-radius: 50px;
+padding: 21px 41px;
+width: 238px;
+height: 61px;
+background: #ffcf3b;
 }
