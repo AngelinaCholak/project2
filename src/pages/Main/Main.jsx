@@ -10,6 +10,7 @@ const Main = () => {
         <p className={css.text1}>Найкращі цінові пропозиції</p>
         <p>саме для вас!</p>
         <button className={css.button}>Хочу перевірити :)</button>
+        <button className={css.button}>Хочу перевірити :)</button>
       </div>
     </section>
   );
