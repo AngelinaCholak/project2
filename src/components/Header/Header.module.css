@@ -1,0 +1,114 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px auto 0 auto;
+}
+.left {
+    width: 245px;
+    height: 40px;
+    
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.button{
+   border-radius: 50px;
+   padding: 13px 23px;
+   width: 141px;
+   height: 40px;
+   background-color:#ffcf3b;
+   border: none;
+   
+   font-family: var(--font-family);
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 117%;
+   text-align: center;
+   color: #000;
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   white-space: nowrap;
+
+}
+.social {
+   width: 92px;
+   height: 40px;
+   display: flex;
+   flex-direction: row;
+   gap: 12px;
+
+}
+
+.logo{
+   margin: 0 50px;
+
+}
+.right{
+
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 16px;
+}
+.buttonOn{
+   border: 2px solid #ffcf3b;
+   border-radius: 50px;
+   padding: 7px 12px;
+   width: 72px;
+   height: 39px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   font-family: var(--font-family);
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 179%;
+   text-align: center;
+   color: #000;
+
+}
+.buttonPhone{
+   border: 2px solid #ffcf3b;
+   border-radius: 16px;
+   width: 136px;
+   height: 64px;
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+
+}
+.blockPhone{
+   display: flex;
+   flex-direction: column;
+   gap: 12px;
+
+}
+.phoneLink{
+  
+   text-decoration: none;
+
+
+   font-family: var(--font-family);
+   font-weight: 700;
+   font-size: 12px;
+   line-height: 117%;
+   text-align: center;
+   color: #000;
+
+}
+.blockPhone{
+   display: flex;
+   flex-direction: column;
+
+}
+.svg{
+    width: 8px;
+    min-width: 8px;
+    max-height: 6px;
+}
