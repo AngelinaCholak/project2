@@ -1,17 +1,75 @@
 .footer{
     padding: 100px 375px;
-width: 1920px;
-/* height: 355px; */
-background: #31519f
+    width: 1920px;
+    /* height: 355px; */
+    background: #31519f;
+    display: flex;
 }
 .logoFooter{
     width: 200px;
-height: 155px;
+    height: 155px;
 }
 .img{
     width: 171px;
-height: 41px;
+    height: 41px;
 }
 .text{
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 133%;
+    color: #fff;
+    opacity: 0.25;
+    margin-top: 62px;
+
+}
+.menuFooter{
+    width: 140px;
+    height: 154px;
+    margin-left: 93px;
+
+}
+.menuText{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 117%;
+    text-transform: uppercase;
+    color: #fff;
+
+}
+.payments{
+    width: 176px;
+    height: 129px;
+    margin-left: 93px;
+}
+.paymentsText{
+    font-family: var(--font-family);
+font-weight: 700;
+font-size: 12px;
+line-height: 117%;
+color: #fff;
+}
+.imgMenu{
+    display: flex;
+    align-items: center;
+       margin-top: 19px;
+           flex-wrap: wrap;
+           justify-content: center;
+          
     
+
+}
+.imgLiqpay{
+    margin-left: 16px;
+ 
+    
+  
+
+
+
+}
+.imgVisa{
+    margin-top: 16px;
+
 }
