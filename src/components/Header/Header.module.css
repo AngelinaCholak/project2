@@ -10,7 +10,6 @@
 .left {
     width: 245px;
     height: 40px;
-    
     display: flex;
     flex-direction: row;
     gap: 12px;
@@ -22,7 +21,6 @@
    height: 40px;
    background-color:#ffcf3b;
    border: none;
-   
    font-family: var(--font-family);
    font-weight: 700;
    font-size: 12px;
@@ -71,6 +69,7 @@
    line-height: 179%;
    text-align: center;
    color: #000;
+   cursor: pointer;
 
 }
 .buttonPhone{
@@ -81,6 +80,7 @@
    display: flex;
    align-items: center;
    justify-content: space-around;
+   cursor: pointer;
 
 }
 .blockPhone{
@@ -90,10 +90,7 @@
 
 }
 .phoneLink{
-  
    text-decoration: none;
-
-
    font-family: var(--font-family);
    font-weight: 700;
    font-size: 12px;
