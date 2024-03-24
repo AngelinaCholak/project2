@@ -2,6 +2,7 @@ import React from 'react'
 import Advantages from './Advantages/Advantages';
 import css from './Main.module.css';
 import Sales from './Sales/Sales';
+import Testimonials from './Testimonials/Testimonials';
 import WatterMath from './WatterMath/WatterMath';
 
 const Main = () => {
@@ -26,6 +27,9 @@ const Main = () => {
       </section>
       <section>
         <Sales />
+      </section>
+      <section>
+        <Testimonials />
       </section>
     </div>
   );
