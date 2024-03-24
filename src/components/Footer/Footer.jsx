@@ -103,6 +103,7 @@ const Footer = () => {
                 <use href={sprite + '#instagram-social'}></use>
               </svg>
             </div>
+            <div className={css.social}></div>
           </div>
         </section>
       </footer>
