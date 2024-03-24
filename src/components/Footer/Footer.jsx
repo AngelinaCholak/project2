@@ -111,7 +111,7 @@ const Footer = () => {
               </div>
               <div className={css.shoppingIcon}>
                 <svg className={css.arrowDowm}>
-                  <use href={sprite + '#arrow-dowm'}></use>
+                  <use href={sprite + '#arrow-dowm1'}></use>
                 </svg>
               </div>
             </div>

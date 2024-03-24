@@ -2,7 +2,6 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Layoyt from './Layoyt/Layoyt';
 import css from './App.module.css';
-import Main from 'pages/Main/Main';
 import Shop from 'pages/Shop/Shop';
 import AboutWater from 'pages/AboutWater/AboutWater';
 import Delivery from 'pages/Delivery/Delivery';
@@ -10,13 +9,14 @@ import Actions from 'pages/Actions/Actions';
 import Blog from 'pages/Blog/Blog';
 import Contacts from 'pages/Contacts/Contacts';
 import Company from 'pages/Company/Company';
+import Home from 'pages/Home/Home';
 
 export const App = () => {
   return (
     <div className={css.container}>
       <Routes>
         <Route path="/" element={<Layoyt />}>
-          <Route index element={<Main />} />
+          <Route index element={<Home />} />
           <Route path="shop" element={<Shop />} />
           <Route path="aboutwater" element={<AboutWater />} />
           <Route path="delivery" element={<Delivery />} />

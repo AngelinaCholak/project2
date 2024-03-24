@@ -1,11 +1,12 @@
 import React from 'react'
 import Advantages from './Advantages/Advantages';
-import css from './Main.module.css';
+import css from './Home.module.css';
 import Sales from './Sales/Sales';
+import Seo from './Seo/Seo';
 import Testimonials from './Testimonials/Testimonials';
 import WatterMath from './WatterMath/WatterMath';
 
-const Main = () => {
+const Home = () => {
   return (
     <div>
       <section className={css.container}>
@@ -28,11 +29,14 @@ const Main = () => {
       <section>
         <Sales />
       </section>
-      <section>
+      <section className={css.containerWatterMath}>
         <Testimonials />
+      </section>
+      <section>
+        <Seo />
       </section>
     </div>
   );
-}
+};
 
-export default Main
+export default Home;

@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+
+
+}
+.containerSeo{
+  width: 1200px;
+  margin-bottom: 100px;
+
+}
+.title{
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 129%;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+.right{
+width: 540px;
+height: 1055px; 
+}
+.left{
+width: 540px;
+height: 1055px;
+}
+.blokContainer{
+display: flex;
+justify-content: space-between;
+}
+.rightText {
+font-weight: 400;
+font-size: 14px;
+line-height: 179%;
+color: #7d818d;
+margin: 0;
+}
+.rightTitle{
+font-weight: 700;
+font-size: 14px;
+line-height: 179%;
+color: #7d818d;
+margin: 0;
+padding-top: 24px;
+padding-bottom: 8px;
+}
