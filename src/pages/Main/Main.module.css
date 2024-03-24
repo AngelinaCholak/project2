@@ -9,22 +9,17 @@
   margin-top: 34px;
   display: flex;
   align-items: center;
-  /* background-size: calc(100% - 0px) auto; */
+}
+.containerWatterMath{
+   background: #f4f4f4;
 
 }
+
 .main{
-/*   
-  width: 540px; 
-  height: 315px;
-  padding-top: 129px;
-  padding-left: 375px; */
     width: 100%;
     max-width: 1200px;
     margin: auto;
     height: 355px;
-
-  
-
 }
 .title{
   font-family: var(--font-family);
@@ -33,7 +28,6 @@
   line-height: 110%;
   color: #fff;
   margin: 0;
-
 
 }
 .text1{

@@ -103,7 +103,18 @@ const Footer = () => {
                 <use href={sprite + '#instagram-social'}></use>
               </svg>
             </div>
-            <div className={css.social}></div>
+            <div className={css.icons}>
+              <div className={css.shoppingIcon}>
+                <svg className={css.rectangle}>
+                  <use href={sprite + '#shopping-cart'}></use>
+                </svg>
+              </div>
+              <div className={css.shoppingIcon}>
+                <svg className={css.arrowDowm}>
+                  <use href={sprite + '#arrow-dowm'}></use>
+                </svg>
+              </div>
+            </div>
           </div>
         </section>
       </footer>
