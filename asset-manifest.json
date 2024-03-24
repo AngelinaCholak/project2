@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/project2/static/css/main.2505a665.css",
-    "main.js": "/project2/static/js/main.3e7a1731.js",
+    "main.css": "/project2/static/css/main.46f963d0.css",
+    "main.js": "/project2/static/js/main.d246633e.js",
     "static/media/background-image.png": "/project2/static/media/background-image.f4a571b638b580f65fb3.png",
     "static/media/image-bottle.png": "/project2/static/media/image-bottle.a6f07d5c550f28f85f5a.png",
     "static/media/image1.png": "/project2/static/media/image1.8705f0715d29c2644e94.png",
     "static/media/image2.png": "/project2/static/media/image2.a128c6a1b0b07d0cfa54.png",
-    "static/media/sprite.svg": "/project2/static/media/sprite.89daa4917f55c1eb5b839fa4237efc34.svg",
+    "static/media/sprite.svg": "/project2/static/media/sprite.551aefd8e9785d3035bab491376b7a1a.svg",
     "index.html": "/project2/index.html",
-    "main.2505a665.css.map": "/project2/static/css/main.2505a665.css.map",
-    "main.3e7a1731.js.map": "/project2/static/js/main.3e7a1731.js.map"
+    "main.46f963d0.css.map": "/project2/static/css/main.46f963d0.css.map",
+    "main.d246633e.js.map": "/project2/static/js/main.d246633e.js.map"
   },
   "entrypoints": [
-    "static/css/main.2505a665.css",
-    "static/js/main.3e7a1731.js"
+    "static/css/main.46f963d0.css",
+    "static/js/main.d246633e.js"
   ]
 }
