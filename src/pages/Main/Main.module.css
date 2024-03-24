@@ -7,14 +7,21 @@
   background-repeat: no-repeat; 
   background-position: center; 
   margin-top: 34px;
+  display: flex;
+  align-items: center;
   /* background-size: calc(100% - 0px) auto; */
 
 }
 .main{
+/*   
   width: 540px; 
   height: 315px;
   padding-top: 129px;
-  padding-left: 375px;
+  padding-left: 375px; */
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    height: 355px;
 
   
 

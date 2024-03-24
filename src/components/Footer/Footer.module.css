@@ -1,9 +1,18 @@
 .footer{
-    padding: 100px 375px;
-    width: 1920px;
-    /* height: 355px; */
-    background: #31519f;
+    /* padding: 100px 375px; */
+    width: 100%;
     display: flex;
+    align-items: center;
+    background: #31519f;
+     height: 355px;
+    
+}
+.footerSection{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
 }
 .logoFooter{
     width: 200px;
@@ -26,7 +35,7 @@
 .menuFooter{
     width: 140px;
     height: 154px;
-    margin-left: 93px;
+    /* margin-left: 93px; */
 
 }
 .menuText{
@@ -41,35 +50,88 @@
 .payments{
     width: 176px;
     height: 129px;
-    margin-left: 93px;
+    /* margin-left: 93px; */
 }
 .paymentsText{
     font-family: var(--font-family);
-font-weight: 700;
-font-size: 12px;
-line-height: 117%;
-color: #fff;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 117%;
+    color: #fff;
 }
 .imgMenu{
     display: flex;
     align-items: center;
-       margin-top: 19px;
-           flex-wrap: wrap;
-           justify-content: center;
+    margin-top: 19px;
+    flex-wrap: wrap;
+    justify-content: center;
           
-    
-
 }
 .imgLiqpay{
     margin-left: 16px;
- 
-    
-  
-
-
 
 }
 .imgVisa{
     margin-top: 16px;
 
+}
+.phones{
+    width: 139px;
+    height: 152px;
+}
+.iconSvg{
+    width: 24px;
+    height: 24px;
+
+}
+.contactsList{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+}
+.contactsItem{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+
+
+}
+.telList{
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 117%;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+
+}
+.social{
+    width: 141px;
+    height: 152px;
+}
+.buttonSocial{
+    border-radius: 50px;
+    padding: 13px 23px;
+    width: 141px;
+    height: 40px;
+    background: #ffcf3b;
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 117%;
+    text-align: center;
+    color: #000;
+}
+.socialSvg{
+    width: 116px;
+    height: 50px;
+}
+.iconSocial{
+    width: 50px;
+    height: 50px;
 }

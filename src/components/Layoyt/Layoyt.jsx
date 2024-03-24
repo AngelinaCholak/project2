@@ -95,10 +95,10 @@ const Layoyt = () => {
             </li>
           </ul>
         </nav>
-        <main>
+        <main >
           <Outlet />
         </main>
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

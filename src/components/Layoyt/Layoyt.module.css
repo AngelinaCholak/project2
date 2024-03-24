@@ -43,3 +43,6 @@
   white-space: nowrap;
   text-decoration: none;
 }
+.mainContainer{
+  width: auto;
+}
