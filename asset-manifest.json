@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/project2/static/css/main.46f963d0.css",
-    "main.js": "/project2/static/js/main.d246633e.js",
+    "main.css": "/project2/static/css/main.5954415c.css",
+    "main.js": "/project2/static/js/main.7a506041.js",
     "static/media/background-image.png": "/project2/static/media/background-image.f4a571b638b580f65fb3.png",
     "static/media/image-bottle.png": "/project2/static/media/image-bottle.a6f07d5c550f28f85f5a.png",
+    "static/media/classic-water.png": "/project2/static/media/classic-water.45f2e45153ffe04f9de0.png",
+    "static/media/silver-water.png": "/project2/static/media/silver-water.99e1ff184f94147f4201.png",
     "static/media/image1.png": "/project2/static/media/image1.8705f0715d29c2644e94.png",
     "static/media/image2.png": "/project2/static/media/image2.a128c6a1b0b07d0cfa54.png",
-    "static/media/sprite.svg": "/project2/static/media/sprite.551aefd8e9785d3035bab491376b7a1a.svg",
+    "static/media/sprite.svg": "/project2/static/media/sprite.fcf64854e98fcc896beb5a5b639771d0.svg",
     "index.html": "/project2/index.html",
-    "main.46f963d0.css.map": "/project2/static/css/main.46f963d0.css.map",
-    "main.d246633e.js.map": "/project2/static/js/main.d246633e.js.map"
+    "main.5954415c.css.map": "/project2/static/css/main.5954415c.css.map",
+    "main.7a506041.js.map": "/project2/static/js/main.7a506041.js.map"
   },
   "entrypoints": [
-    "static/css/main.46f963d0.css",
-    "static/js/main.d246633e.js"
+    "static/css/main.5954415c.css",
+    "static/js/main.7a506041.js"
   ]
 }
