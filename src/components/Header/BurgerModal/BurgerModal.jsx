@@ -1,106 +1,126 @@
-import React, { useState } from 'react';
-import { NavLink, Outlet } from 'react-router-dom';
-import css from './Layoyt.module.css';
-import Header from 'components/Header/Header';
-import BurgerModal from 'components/Header/BurgerModal/BurgerModal';
+import React, { useRef, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
+import ButtonLang from '../ButtonLang/ButtonLang';
+import css from './BurgerModal.module.css';
+import Search from './Search/Search';
 
+const BurgerModal = ({ onClose }) => {
+  const modalRef = useRef(null);
 
-const Layoyt = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  useEffect(() => {
+    const handleOutsideClick = e => {
+      if (!modalRef.current.contains(e.target)) {
+        onClose();
+      }
+    };
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-    setIsModalOpen(!isModalOpen); 
-  };
+    document.addEventListener('mousedown', handleOutsideClick);
 
-  const handleCloseMenu = () => {
-    setIsMenuOpen(false);
-    setIsModalOpen(false); 
+    return () => {
+      document.removeEventListener('mousedown', handleOutsideClick);
+    };
+  }, [onClose]);
+
+  const handleLinkClick = () => {
+    onClose(); 
   };
 
   return (
-    <div className={css.headerContainer}>
-      <Header onToggleMenu={toggleMenu} isMenuOpen={isMenuOpen} />
+    <div className={css.container} ref={modalRef}>
+      <div className={css.search}>
+        <Search />
+        <div className={css.buttonLang}>
+          <ButtonLang />
+        </div>
+      </div>
+      <button className={css.personalOffice}>Особистий кабінет</button>
       <div>
-        <nav className={`${css.nav} ${isMenuOpen ? css.navOpen : ''}`}>
-          <ul className={css.navList}>
+        <nav>
+          <ul className={css.navList2}>
             <li className={css.list}>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? css.active : css.headerLink
                 }
                 to="/"
+                onClick={handleLinkClick}
               >
                 Головна
               </NavLink>
             </li>
-            <li>
+            <li className={css.list}>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? css.active : css.headerLink
                 }
                 to="/shop"
+                onClick={handleLinkClick}
               >
                 Магазин
               </NavLink>
             </li>
-            <li>
+            <li className={css.list}>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? css.active : css.headerLink
                 }
                 to="/aboutwater"
+                onClick={handleLinkClick}
               >
                 Про воду
               </NavLink>
             </li>
-            <li>
+            <li className={css.list}>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? css.active : css.headerLink
                 }
                 to="/delivery"
+                onClick={handleLinkClick}
               >
                 Доставка і ціни
               </NavLink>
             </li>
-            <li>
+            <li className={css.list}>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? css.active : css.headerLink
                 }
                 to="/actions"
+                onClick={handleLinkClick}
               >
                 Акції
               </NavLink>
             </li>
-            <li>
+            <li className={css.list}>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? css.active : css.headerLink
                 }
                 to="/blog"
+                onClick={handleLinkClick}
               >
                 Блог
               </NavLink>
             </li>
-            <li>
+            <li className={css.list}>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? css.active : css.headerLink
                 }
                 to="/contacts"
+                onClick={handleLinkClick}
               >
                 Контакти
               </NavLink>
             </li>
-            <li>
+            <li className={css.list}>
               <NavLink
                 className={({ isActive }) =>
                   isActive ? css.active : css.headerLink
                 }
                 to="/company"
+                onClick={handleLinkClick}
               >
                 Про компанію
               </NavLink>
@@ -108,12 +128,9 @@ const Layoyt = () => {
           </ul>
         </nav>
       </div>
-      <main>
-        <Outlet />
-      </main>
-      {isModalOpen && <BurgerModal onClose={handleCloseMenu} />}
     </div>
   );
 };
 
-export default Layoyt;
+export default BurgerModal;
+

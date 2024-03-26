@@ -1,0 +1,26 @@
+.slideContainer{
+    width: 202px;
+height: 181px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #bf1616;
+  cursor: pointer;
+}
+
+.dotActive {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #333;
+}

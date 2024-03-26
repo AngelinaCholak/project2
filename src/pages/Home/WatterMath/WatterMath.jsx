@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import css from './WatterMath.module.css';
 import sprite from '../../../assets/sprite.svg';
 import bottle from '../../../assets/img/image-bottle.png';
+import classic from '../../../assets/img/classic-water.png';
+import silver from '../../../assets/img/silver-water.png';
 
 const WatterMath = () => {
   const initialValue = 115;
@@ -47,6 +49,9 @@ const WatterMath = () => {
         <p className={css.headText}>додому або в офіс у Києві</p>
       </div>
       <div className={css.blok}>
+        <div className={css.classic}>
+          <img src={classic} alt="bottle" />
+        </div>
         <div className={css.textLeft}>
           <h3 className={css.titleMatch}>Вода Класична</h3>
           <p className={css.textMatch}>
@@ -95,11 +100,14 @@ const WatterMath = () => {
         <div className={css.img}>
           <img src={bottle} alt="bottle" />
         </div>
+        <div className={css.classic}>
+          <img src={silver} alt="bottle" />
+        </div>
         <div className={css.textRight}>
-          <h3 className={css.titleMatch}>Вода Класична</h3>
+          <h3 className={css.titleMatch}>Вода Срібна</h3>
           <p className={css.textMatch}>
-            Вода з оптимальним мінерально-сольовим складом. Поповнює водний
-            баланс і підвищує тонус організму.
+            Вода, насичена іонами срібла. Має противірусну та антимікробну дію,
+            благотворно впливає на роботу організму.
           </p>
           <div className={css.math}>
             <div className={css.sumBlok}>

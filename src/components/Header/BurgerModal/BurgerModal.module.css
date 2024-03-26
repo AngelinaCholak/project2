@@ -1,0 +1,76 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 288px;
+  height: 100%;
+  z-index: 999;
+  background-color: #fff;
+  display: block;
+  box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.24);
+}
+.navList2 {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  
+}
+
+.list a {
+  text-decoration: none; 
+  margin-left: 24px;
+  margin-bottom: 25px;
+
+}
+
+.search{
+  width: 288px;
+  height: 80px;
+  background: #31519f;
+  display: flex;
+  gap: 16px;
+}
+.buttonLang{
+  margin-top: 20px;
+}
+.personalOffice{
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-bottom: 24px;
+  cursor: pointer;
+  border: none;
+  border-radius: 50px;
+  padding: 13px 23px;
+  background: #ffcf3b;
+  width: 165px;
+  height: 40px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 117%;
+  text-align: center;
+  color: #000;
+}
+.active{
+  color: #ffcf3b;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 131%;
+}
+.headerLink{
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 131%;
+  color: #000;
+}
+
+@media (min-width: 1024px) {
+  .container{
+  display: none;
+}
+
+
+ 
+}

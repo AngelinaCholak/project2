@@ -1,11 +1,64 @@
-.header{
-    display: flex;
-    flex-direction: row;
+.container{
     width: 100%;
-    max-width: 1200px;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px auto 0 auto;
+    max-width: 375px;
+    min-width: 375px;
+    margin: 0 auto 0 auto;
+
+}
+.header{
+   padding: 16px 24px 0 24px;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+ 
+}
+.button{
+   display: none;
+}
+svg{
+   width: 40px;
+   height: 40px;
+
+} 
+.social{
+   display: flex;
+   gap: 12px;
+
+}
+.right{
+   display: none;
+
+}
+.burgerButton{
+   border: none;
+   background-color: transparent;
+   cursor: pointer;
+}
+.burgerIcon { 
+   width: 30px;
+   height: 25px;
+}
+
+
+@media screen and (min-width: 1024px) {
+.container{
+   max-width: 1200px;
+
+}
+.header{
+   padding: 0;
+   margin-top: 16px;
+    position: relative;
+}
+.header::after {
+  content: ""; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(270deg, #fff 0%, #eee 49.98%, #fff 99.88%); 
 }
 .left {
     width: 245px;
@@ -14,7 +67,11 @@
     flex-direction: row;
     gap: 12px;
 }
-.button{
+ .burgerButton{
+         display: none;
+   }
+
+  .button{
    border-radius: 50px;
    padding: 13px 23px;
    width: 141px;
@@ -32,7 +89,15 @@
    justify-content: center;
    align-items: center;
    white-space: nowrap;
-
+}
+.svgTel{
+   display: none;
+}
+.right{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 16px;
 }
 .social {
    width: 92px;
@@ -40,19 +105,9 @@
    display: flex;
    flex-direction: row;
    gap: 12px;
-
 }
-
 .logo{
    margin: 0 50px;
-
-}
-.right{
-
-   display: flex;
-   flex-direction: row;
-   align-items: center;
-   gap: 16px;
 }
 .buttonOn{
    border: 2px solid #ffcf3b;
@@ -70,7 +125,6 @@
    text-align: center;
    color: #000;
    cursor: pointer;
-
 }
 .buttonPhone{
    border: 2px solid #ffcf3b;
@@ -81,13 +135,11 @@
    align-items: center;
    justify-content: space-around;
    cursor: pointer;
-
 }
 .blockPhone{
    display: flex;
    flex-direction: column;
    gap: 12px;
-
 }
 .phoneLink{
    text-decoration: none;
@@ -97,15 +149,14 @@
    line-height: 117%;
    text-align: center;
    color: #000;
-
 }
 .blockPhone{
    display: flex;
    flex-direction: column;
-
 }
 .svg{
     width: 8px;
     min-width: 8px;
     max-height: 6px;
+}
 }

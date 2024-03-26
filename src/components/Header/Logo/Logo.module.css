@@ -1,4 +1,13 @@
-.logo{
-    width: 136px;
-    height: 80px;
+
+.logo {
+  width: 100px; 
+  height: 55px; 
+}
+
+@media screen and (min-width: 1024px) {
+
+  .logo {
+    width: 136px; 
+    height: 80px; 
+  }
 }

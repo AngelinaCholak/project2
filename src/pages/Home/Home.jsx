@@ -1,7 +1,8 @@
 import React from 'react'
 import Advantages from './Advantages/Advantages';
 import css from './Home.module.css';
-import Sales from './Sales/Sales';
+import Sales from './Sales/SalesDesktop/Sales';
+
 import Seo from './Seo/Seo';
 import Testimonials from './Testimonials/Testimonials';
 import WatterMath from './WatterMath/WatterMath';

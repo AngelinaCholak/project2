@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import css from './Sales.module.css';
-import sprite from '../../../assets/sprite.svg';
-import image1 from '../../../assets/img/image1.png';
-import image2 from '../../../assets/img/image2.png';
+import sprite from '../../../../assets/sprite.svg';
+import image1 from '../../../../assets/img/image1.png';
+import image2 from '../../../../assets/img/image2.png';
+import SalesMobil from '../SalesMobil/SalesMobil';
 
 const Sales = () => {
   const slides = [
@@ -68,6 +69,9 @@ const Sales = () => {
             <use href={sprite + '#arrow-right'}></use>
           </svg>
         </button>
+      </div>
+      <div className={css.sliderWrappeMobil}>
+        <SalesMobil/>
       </div>
     </div>
   );

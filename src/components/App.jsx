@@ -10,6 +10,7 @@ import Blog from 'pages/Blog/Blog';
 import Contacts from 'pages/Contacts/Contacts';
 import Company from 'pages/Company/Company';
 import Home from 'pages/Home/Home';
+import Footer from './Footer/Footer';
 
 export const App = () => {
   return (
@@ -26,6 +27,7 @@ export const App = () => {
           <Route path="company" element={<Company />} />
         </Route>
       </Routes>
+      <Footer />
     </div>
   );
 };
