@@ -107,37 +107,34 @@
   display: flex;
   justify-content: center;
 }
-.buttonMathPlus{
+
+.buttonMathPlus {
   position: absolute;
   top: -11.5px;
-  border-radius: 11px;
-  background:var(--background-color, #31519f);
-  width: 23px;
-  height: 23px;
   border: none;
   cursor: pointer;
+  transition: transform 0.2s; 
+  background-color: transparent;
 }
-.buttonMathPlus:hover{
-  width: 25px;
-  height: 25px;
+
+.buttonMathPlus:hover {
+  transform: scale(1.2); 
 }
+
 .buttonMathMinus{
   position: absolute;
   bottom: -11.5px;
-  border-radius: 11px;
-  background: var(--background-color, #31519f);
-  width: 23px;
-  height: 23px;
   border: none;
   cursor: pointer;
+  transition: transform 0.2s; 
+  background-color: transparent;
 }
 .buttonMathMinus:hover{
-  width: 25px;
-  height: 25px;
+  transform: scale(1.2); 
 }
 .buttonSvg{
-  width: 10px;
-  height: 9px;
+  width: 18px;
+  height: 18px;
   padding: 0;
 
 }
