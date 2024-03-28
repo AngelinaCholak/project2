@@ -36,11 +36,13 @@ const Header = ({ onToggleMenu, isMenuOpen, onClose }) => {
         </div>
 
         {isMenuOpen ? (
-          <button className={css.burgerButton} onClick={handleCloseMenu}>
-            <svg className={css.burgerIcon}>
-              <use href={sprite + '#close'}></use>
-            </svg>
-          </button>
+          <div onClick={handleCloseMenu}>
+            <button className={css.burgerButton} onClick={handleCloseMenu}>
+              <svg className={css.burgerIcon}>
+                <use href={sprite + '#close'}></use>
+              </svg>
+            </button>
+          </div>
         ) : (
           <button className={css.burgerButton} onClick={handleToggleMenu}>
             <svg className={css.burgerIcon}>

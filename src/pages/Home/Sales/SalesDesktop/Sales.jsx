@@ -10,15 +10,17 @@ const Sales = () => {
     {
       image: image1,
       text: 'Приведи друга',
-      text1: 'та отримай бутель води безкоштовно!',
+      text1: 'та отримай бутель води!',
+      text2: 'безкоштовно!',
       color: '#ff6161',
     },
-      {
-        image: image2,
-        text: 'Купи кулер',
-        text1: 'та отримай 2 бутлі води уподарунок!',
-        color: '#85ab8f',
-      },
+    {
+      image: image2,
+      text: 'Купи кулер',
+      text1: 'та отримай 2 бутлі води!',
+      text2: 'уподарунок!',
+      color: '#85ab8f',
+    },
   ];
 
   const numSlides = slides.length;
@@ -50,6 +52,7 @@ const Sales = () => {
               <div className={css.blokText}>
                 <p className={css.text}>{slides[adjustedIndex].text}</p>
                 <p className={css.text1}>{slides[adjustedIndex].text1}</p>
+                <p className={css.text2}>{slides[adjustedIndex].text2}</p>
               </div>
               <img
                 className={css.image}

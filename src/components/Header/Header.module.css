@@ -49,7 +49,7 @@ svg{
 .header{
    padding: 0;
    margin-top: 16px;
-    position: relative;
+   position: relative;
 }
 .header::after {
   content: ""; 
@@ -61,14 +61,14 @@ svg{
   background: linear-gradient(270deg, #fff 0%, #eee 49.98%, #fff 99.88%); 
 }
 .left {
-    width: 245px;
-    height: 40px;
-    display: flex;
-    flex-direction: row;
-    gap: 12px;
+   width: 245px;
+   height: 40px;
+   display: flex;
+   flex-direction: row;
+   gap: 12px;
 }
  .burgerButton{
-         display: none;
+   display: none;
    }
 
   .button{
@@ -76,14 +76,14 @@ svg{
    padding: 13px 23px;
    width: 141px;
    height: 40px;
-   background-color:#ffcf3b;
+   background: var(--button-color, #ffcf3b);
    border: none;
    font-family: var(--font-family);
    font-weight: 700;
    font-size: 12px;
    line-height: 117%;
    text-align: center;
-   color: #000;
+   color: var(--text-black-color);
    cursor: pointer;
    display: flex;
    justify-content: center;
@@ -123,7 +123,7 @@ svg{
    font-size: 14px;
    line-height: 179%;
    text-align: center;
-   color: #000;
+   color: var(--text-black-color);
    cursor: pointer;
 }
 .buttonPhone{
@@ -148,7 +148,7 @@ svg{
    font-size: 12px;
    line-height: 117%;
    text-align: center;
-   color: #000;
+   color: var(--text-black-color);
 }
 .blockPhone{
    display: flex;

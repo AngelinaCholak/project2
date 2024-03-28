@@ -1,4 +1,4 @@
-.container {
+  .container {
   width: 100%;
   max-width: 1200px;
   margin: auto;
@@ -8,65 +8,59 @@
   justify-content: center;
 
 }
-.title{
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 129%;
-  text-align: center;
-  padding-top: 100px;
-  padding-bottom: 30px;
-  margin: 0;
-
-}
-
-.containerBlok {
-  display: flex;
-  flex-wrap: wrap; 
-  justify-content: space-between; 
-  
-}
-
-.row {
-  display: flex;
-  justify-content: space-between; 
-  width: 1200px;
-  gap: 30px;
-  margin: 0;
-}
-
 .blok{
   border-radius: 24px;
-  width: 370px;
+  width: 312px;
   height: 350px;
-  background: #fff;
+  background:  var( --text-white-color, #fff);
   margin-top: 20px;
 
+}
+.row {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+
+}
+.title{
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 129%;
+  text-align: center;
+  margin: 0;
+  width: 290px;
+  padding-top: 80px;
+  padding-bottom: 42px;
+
+}
+.text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 179%;
+  padding: 40px 24px 24px;
+  margin: 0;
 }
 .button{
   border-radius: 50px;
   padding: 13px 23px;
   width: 131px;
   height: 40px;
-  background: #ffcf3b;
+  background:  var(--button-color, #ffcf3b);
   margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   border: none;
   cursor: pointer;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 117%;
+  text-align: center;
 
 }
 .buttonSvg{
   width: 8px;
   height: 6px;
   padding-left: 10px;
-}
-
-.text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 179%;
-  color: #000;
-  padding: 40px 40px 24px;
-  margin: 0;
 }
 .blokTestimonials{
   padding-left: 40px;
@@ -94,57 +88,43 @@
 
 }
 .star{
-    display: flex;
-    width: 92px;
-height: 12px;
+  display: flex;
+  width: 92px;
+  height: 12px;
 }
-/* Стилі для мобільних пристроїв */
-@media (max-width: 767px) {
-  .container {
-    padding-top: 50px; /* Зменште верхній відступ контейнера на мобільних пристроях */
-    padding-bottom: 50px; /* Зменште нижній відступ контейнера на мобільних пристроях */
-  }
 
-  .title {
-    font-size: 24px; /* Зменште розмір шрифту заголовку на мобільних пристроях */
-    padding-top: 40px; /* Зменште верхній відступ заголовку на мобільних пристроях */
-    padding-bottom: 20px; /* Зменште нижній відступ заголовку на мобільних пристроях */
-  }
 
-  .containerBlok {
-    flex-direction: column; /* Змініть напрямок контейнера на вертикальний на мобільних пристроях */
-    align-items: center; /* Вирівняйте елементи по центру по горизонталі на мобільних пристроях */
-  }
+@media screen and (min-width: 1024px) {
+  .blok{
+  width: 370px;
 
-  .row {
-    flex-direction: column; /* Змініть напрямок рядків на вертикальний на мобільних пристроях */
-    width: 100%; /* Змініть ширину рядків на повну ширину на мобільних пристроях */
-    gap: 20px; /* Додайте зазори між елементами рядків на мобільних пристроях */
-  }
-
-  .blok {
-    width: calc(100% - 20px); /* Зменште ширину блоків на мобільних пристроях */
-    margin-top: 0; /* Видаліть верхній відступ блоків на мобільних пристроях */
-    margin-bottom: 20px; /* Збільште нижній відступ блоків на мобільних пристроях */
-  }
-
-  .button {
-    width: 131px; /* Залиште ширину кнопки як на десктопі на мобільних пристроях */
-    margin-top: 20px; /* Зменште верхній відступ кнопки на мобільних пристроях */
-    margin-bottom: 50px; /* Збільште нижній відступ кнопки на мобільних пристроях */
-  }
-
-  .text {
-    padding: 20px; /* Зменште внутрішні відступи тексту на мобільних пристроях */
-  }
-
-  .blokTestimonials {
-    padding-left: 0; /* Видаліть відступ зліва для блоку відгуку на мобільних пристроях */
-    width: 100%; /* Змініть ширину блоку відгуку на повну ширину на мобільних пристроях */
-    justify-content: center; /* Вирівняйте елементи по центру по горизонталі на мобільних пристроях */
-  }
-
-  .testimonialsBlok {
-    padding-left: 0; /* Видаліть відступ зліва для блоку з ім'ям і рейтингом на мобільних пристроях */
-  }
 }
+.row {
+  display: flex;
+  flex-direction: row; 
+  width: 1200px;
+  gap: 30px;
+  margin: 0;
+}
+.containerBlok {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  
+}
+.title{
+  font-size: 34px;
+  padding-top: 100px;
+  padding-bottom: 30px;
+  width: 100%;
+
+}
+.text {
+  padding: 40px 40px 24px;
+}
+.button{
+  margin-bottom: 100px;
+}
+
+}
+

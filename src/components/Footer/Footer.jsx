@@ -6,6 +6,12 @@ import liqpay from '../../assets/img/liqpay.png';
 import visa from '../../assets/img/visa.png';
 import sprite from '../../assets/sprite.svg';
 const Footer = () => {
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth', 
+      });
+    };
     return (
       <footer className={css.footer}>
         <section className={css.footerSection}>
@@ -109,7 +115,7 @@ const Footer = () => {
                   <use href={sprite + '#shopping-cart'}></use>
                 </svg>
               </div>
-              <div className={css.shoppingIcon}>
+              <div className={css.shoppingIcon} onClick={scrollToTop}>
                 <svg className={css.arrowDowm}>
                   <use href={sprite + '#arrow-dowm1'}></use>
                 </svg>

@@ -64,7 +64,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 129%;
-  color: #7d818d;
+  color: var(--text-gray-color);
   margin-top: 24px;
   margin-bottom: 24px;
 }
@@ -72,26 +72,24 @@
   position: relative;
   justify-content: center;
   border: 1px solid #e2e4e8;
-  background: #fff;
+  background: var(--text-white-color);
   border-radius: 15px;
   width: 323px;
   height: 64px;
   display: flex;
 }
 .mathSum{
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 20px;
   line-height: 130%;
-  color: #000;
+  color: var(--text-black-color);
 }
 .matResult{
-  font-family: var(--font-family);
   font-weight: 700;
   font-size: 20px;
   line-height: 130%;
   text-align: center;
-  color: #31519f;
+  color: var(--background-color, #31519f);
 }
 .multiply{
   width: 11px;
@@ -113,7 +111,7 @@
   position: absolute;
   top: -11.5px;
   border-radius: 11px;
-  background: #31519f;
+  background:var(--background-color, #31519f);
   width: 23px;
   height: 23px;
   border: none;
@@ -127,7 +125,7 @@
   position: absolute;
   bottom: -11.5px;
   border-radius: 11px;
-  background: #31519f;
+  background: var(--background-color, #31519f);
   width: 23px;
   height: 23px;
   border: none;
@@ -149,13 +147,13 @@
   height: 61px;
   border: none;
   cursor: pointer;
-  background: #ffcf3b;
+  background: var(--button-color, #ffcf3b);
   margin-top: 24px;
   font-weight: 700;
   font-size: 16px;
   line-height: 119%;
   text-align: center;
-  color: #000;
+  color: var(--text-black-color);
 }
 
 @media screen and (min-width: 1024px) {

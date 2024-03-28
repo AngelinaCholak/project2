@@ -1,84 +1,81 @@
 .footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: var(--background-color, #31519f);
     position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background: #31519f;
-    height: 355px;
-    
-}
-.footerSection{
-    width: 100%;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
 }
 .logoFooter{
-    width: 200px;
-    height: 155px;
-}
-.img{
-    width: 171px;
-    height: 41px;
+    width: 312px;
+    height: 119px;
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
 }
 .text{
-    font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 133%;
-    color: #fff;
+    color: var( --text-white-color, #fff);
     opacity: 0.25;
-    margin-top: 62px;
-
+    margin-top: 24px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 129%;
 }
 .menuFooter{
-    width: 140px;
-    height: 154px;
-    /* margin-left: 93px; */
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 14px;
 }
-.menuText{
-    font-family: var(--font-family);
+  .menuText{
     font-weight: 700;
     font-size: 12px;
     line-height: 117%;
     text-transform: uppercase;
-    color: #fff;
-
+    color: var( --text-white-color, #fff);
+    margin: 0;
 }
 .payments{
-    width: 176px;
-    height: 129px;
-    /* margin-left: 93px; */
+    width: 312px;
+    height: 80px;
+    margin-top: 40px;
 }
 .paymentsText{
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 12px;
     line-height: 117%;
-    color: #fff;
+    color: var( --text-white-color, #fff);
+    margin: 0;
+    text-align: center;
 }
 .imgMenu{
     display: flex;
     align-items: center;
     margin-top: 19px;
     flex-wrap: wrap;
-    justify-content: center;
-          
+    justify-content: center;    
 }
+.phones{
+    margin-top: 40px;
+    justify-content: center;
+    display: flex;
+}
+
+.img{
+    width: 171px;
+    height: 41px;
+}
+
 .imgLiqpay{
     margin-left: 16px;
-
 }
 .imgVisa{
     margin-top: 16px;
+}
 
-}
-.phones{
-    width: 139px;
-    height: 152px;
-}
 .iconSvg{
     width: 24px;
     height: 24px;
@@ -95,130 +92,123 @@
     align-items: center;
     gap: 8px;
     margin-bottom: 8px;
-
-
 }
 .telList{
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 12px;
     line-height: 117%;
     text-transform: uppercase;
-    color: #fff;
+    color: var( --text-white-color, #fff);
     text-decoration: none;
-
 }
 .social{
-    width: 141px;
-    height: 152px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 80px;
 }
 .buttonSocial{
     border-radius: 50px;
     padding: 13px 23px;
     width: 141px;
     height: 40px;
-    background: #ffcf3b;
+    background: var(--button-color, #ffcf3b);
     border: none;
     cursor: pointer;
-    font-family: var(--font-family);
     font-weight: 700;
     font-size: 12px;
     line-height: 117%;
     text-align: center;
-    color: #000;
+    color: var(--text-black-color);
 }
 .socialSvg{
-    width: 116px;
-    height: 50px;
-    margin-top: 62px;
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+}
+.icons{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
 }
 .iconSocial{
     width: 50px;
     height: 50px;
 }
-.icons{
-    position: absolute;
-    top: 55px;
-    right: 0;
-    width: 60px;
-    height: 160px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
 
-}
 .shoppingIcon{
     border-radius: 16px 0 0 16px;
     width: 60px;
     height: 60px;
-    background: #ffcf3b;
+    background: var(--button-color, #ffcf3b);
     display: flex; 
     justify-content: center; 
     align-items: center;
-
 }
 .rectangle{
     width: 32px;
     height: 32px;
- 
-
 }
 .arrowDowm{
     width: 12px;
     height: 8px;
+}
+
+@media (min-width: 1024px) {
+.footer{
+    height: 355px;
+}
+.footerSection{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.logoFooter{
+    width: 200px;
+    height: 155px;
+    margin: 0;
+    align-items: baseline;
+}
+.text{
+    margin-top: 62px;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 133%;
+}
+.menuFooter{
+    width: 140px;
+    height: 154px;
 
 }
-/* Стилі для мобільних пристроїв */
-@media (max-width: 767px) {
-  .footer {
-    height: auto;
-    padding: 20px 0; /* Додайте зазори по верху та низу для мобільних пристроїв */
-    flex-direction: column; /* Змініть напрямок блоків на вертикальний на мобільних пристроях */
-    align-items: flex-start; /* Вирівняйте елементи відносно початку на мобільних пристроях */
-  }
-
-  .footerSection {
-    flex-direction: column; /* Змініть напрямок блоків на вертикальний на мобільних пристроях */
-    align-items: center; /* Вирівняйте елементи відносно центру на мобільних пристроях */
-    gap: 20px; /* Додайте зазори між блоками на мобільних пристроях */
-  }
-
-  .logoFooter {
-    width: auto; /* Змініть ширину логотипу на автоматичне на мобільних пристроях */
-    height: auto; /* Змініть висоту логотипу на автоматичне на мобільних пристроях */
-    margin-bottom: 20px; /* Збільште відступ знизу для логотипу на мобільних пристроях */
-  }
-
-  .img {
-    width: auto; /* Змініть ширину зображення на автоматичне на мобільних пристроях */
-    height: auto; /* Змініть висоту зображення на автоматичне на мобільних пристроях */
-  }
-
-  .text {
-    margin-top: 20px; /* Збільште відступ зверху для тексту на мобільних пристроях */
-    text-align: center; /* Вирівняйте текст по центру на мобільних пристроях */
-  }
-
-  .menuFooter, .payments, .phones, .social {
-    width: auto; /* Змініть ширину блоків на автоматичне на мобільних пристроях */
-    height: auto; /* Змініть висоту блоків на автоматичне на мобільних пристроях */
-    text-align: center; /* Вирівняйте текст по центру на мобільних пристроях */
-  }
-
-  .buttonSocial {
-    width: auto; /* Змініть ширину кнопки на автоматичне на мобільних пристроях */
-    margin-top: 20px; /* Збільште відступ зверху для кнопки на мобільних пристроях */
-  }
-
-  .icons {
-    position: static; /* Змініть позиціонування на статичне на мобільних пристроях */
-    width: 100%; /* Змініть ширину блоку на повну ширину на мобільних пристроях */
-    flex-direction: row; /* Змініть напрямок блоків на горизонтальний на мобільних пристроях */
-    justify-content: center; /* Вирівняйте елементи по центру на мобільних пристроях */
-    gap: 20px; /* Додайте зазори між елементами на мобільних пристроях */
-  }
-
-  .shoppingIcon {
-    border-radius: 16px; /* Змініть радіус кутів кнопки на мобільних пристроях */
-  }
+.payments{
+    width: 176px;
+    height: 129px;
+    margin: 0;
+}
+.paymentsText{
+    text-align: left;
+}
+.phones{
+    width: 139px;
+    height: 152px;
+    margin: 0; 
+}
+.social{
+    margin: 0;
+    align-items: flex-end;
+}
+.socialSvg{
+    margin-top: 62px;
+}
+.icons{
+    gap: 40px;
+    top: 55px;
+}
 }

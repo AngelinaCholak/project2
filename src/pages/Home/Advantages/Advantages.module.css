@@ -60,7 +60,7 @@ margin-bottom: 40px;
   font-weight: 400;
   font-size: 14px;
   line-height: 129%;
-  color: #7d818d;
+  color: var(--text-gray-color);
   margin: 0;
 }
 

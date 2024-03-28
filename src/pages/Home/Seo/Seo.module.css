@@ -1,81 +1,80 @@
 .container {
   width: 100%;
-  max-width: 1200px;
-  margin: auto;
-
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 
 }
-.containerSeo{
-  width: 1200px;
-  margin-bottom: 100px;
+.blokContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.right{
+  width: 312px;
 
+}
+.left{
+  width: 312px;
+  margin-bottom: 80px;
 }
 .title{
   font-weight: 700;
-  font-size: 34px;
+  font-size: 28px;
   line-height: 129%;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 100px;
-  margin-bottom: 50px;
-}
-.right{
-width: 540px;
-height: 1055px; 
-}
-.left{
-width: 540px;
-height: 1055px;
-}
-.blokContainer{
-display: flex;
-justify-content: space-between;
+  margin-top: 80px;
+  width: 312px;
+  margin-bottom: 40px;
+
 }
 .rightText {
-font-weight: 400;
-font-size: 14px;
-line-height: 179%;
-color: #7d818d;
-margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 179%;
+  color: var(--text-gray-color);
+  margin: 0;
 }
 .rightTitle{
-font-weight: 700;
-font-size: 14px;
-line-height: 179%;
-color: #7d818d;
-margin: 0;
-padding-top: 24px;
-padding-bottom: 8px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 179%;
+  color: var(--text-gray-color);
+  margin: 0;
+  padding-top: 24px;
+  padding-bottom: 8px;
 }
-/* Стилі для мобільних пристроїв */
-@media (max-width: 767px) {
-  .container {
-    padding: 0 20px; /* Додайте зовнішні відступи для контейнера на мобільних пристроях */
-  }
 
-  .containerSeo {
-    width: 100%; /* Змініть ширину на повну ширину контейнера для мобільних пристроях */
-    margin-bottom: 50px; /* Зменште відступ знизу контейнера на мобільних пристроях */
-  }
 
-  .title {
-    font-size: 24px; /* Зменште розмір шрифту заголовку на мобільних пристроях */
-    margin-top: 50px; /* Зменште відступ зверху для заголовку на мобільних пристроях */
-    margin-bottom: 30px; /* Зменште відступ знизу для заголовку на мобільних пристроях */
-  }
-
-  .right, .left {
-    width: 100%; /* Змініть ширину блоків на повну ширину на мобільних пристроях */
-    height: auto; /* Змініть висоту блоків на автоматичне на мобільних пристроях */
-  }
-
-  .blokContainer {
-    flex-direction: column; /* Змініть напрямок контейнера на вертикальний на мобільних пристроях */
-    gap: 20px; /* Додайте зазори між елементами контейнера на мобільних пристроях */
-  }
-
-  .rightTitle, .rightText {
-    font-size: 12px; /* Зменште розмір шрифту тексту на мобільних пристроях */
-    line-height: 130%; /* Збільште міжрядковий інтервал на мобільних пристроях */
-  }
+@media screen and (min-width: 1024px) {
+  .containerSeo{
+  width: 1200px;
+  margin-bottom: 100px;
 }
+.blokContainer{
+  display: flex;
+  flex-direction: row;
+  gap: 70px;
+}
+.right{
+  width: 540px;
+  height: 1055px; 
+
+}
+.left{
+  width: 540px;
+  height: 1055px;
+  margin: 0;
+
+}
+.title{
+  font-size: 34px;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+}
+
