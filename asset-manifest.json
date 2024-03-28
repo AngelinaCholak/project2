@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/project2/static/css/main.b0ccd8c2.css",
-    "main.js": "/project2/static/js/main.d30d2097.js",
+    "main.js": "/project2/static/js/main.937de7d7.js",
     "static/media/background-image.png": "/project2/static/media/background-image.f4a571b638b580f65fb3.png",
     "static/media/image-bottle.png": "/project2/static/media/image-bottle.a6f07d5c550f28f85f5a.png",
     "static/media/classic-water.png": "/project2/static/media/classic-water.45f2e45153ffe04f9de0.png",
@@ -11,10 +11,10 @@
     "static/media/sprite.svg": "/project2/static/media/sprite.7e9f184fe1de69ce18c9eaffffe2c2e9.svg",
     "index.html": "/project2/index.html",
     "main.b0ccd8c2.css.map": "/project2/static/css/main.b0ccd8c2.css.map",
-    "main.d30d2097.js.map": "/project2/static/js/main.d30d2097.js.map"
+    "main.937de7d7.js.map": "/project2/static/js/main.937de7d7.js.map"
   },
   "entrypoints": [
     "static/css/main.b0ccd8c2.css",
-    "static/js/main.d30d2097.js"
+    "static/js/main.937de7d7.js"
   ]
 }
