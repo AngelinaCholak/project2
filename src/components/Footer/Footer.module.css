@@ -185,6 +185,7 @@
 .menuFooter{
     width: 140px;
     height: 154px;
+    align-items: baseline;
 
 }
 .payments{
